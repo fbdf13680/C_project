@@ -5,18 +5,18 @@ int pow2 (int n)
 	int i, total=1;
 	for(i=1;i<=n;i++)
 		total *= 2;
-	
+		
 	return total;
 }
 double my_fun (int n)
 {
-	if(n>1)
-	{ 
-		printf("%d %f\n", n, (1/pow2(n)));
-		return (1/pow2(n))+my_fun(n-1);
-	} 
-	else
-		return 0.5;
+	int i;
+	double total=0.0;
+	for(i=1;i<=n;i++)
+	{
+		total+=(1.0/pow2(i));// 注意要除或除以小數，雙邊都要是小數才能成功 
+	}
+	return total;
 }
 
 int main (void)
