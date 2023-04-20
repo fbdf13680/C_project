@@ -22,10 +22,8 @@ double my_fun (int n)
 int main (void)
 {
 	int i;
-	for(i=3;i<=6;i++)
-	{
+	for(i=3;i<=1000;i++)
 		printf("my_fun(%d)=%f\n", i, my_fun(i));
-	}
 		
 	system("pause");
 	return 0;
