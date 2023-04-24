@@ -1,17 +1,20 @@
 #include<stdio.h>
 #include<stdlib.h>
-int pow2 (int n)
+int prod (int n)
 {
 	int i, total=1;
 	for(i=1;i<=n;i++)
-		total *= 2;
+		total *= i;
 	
 	return total;
 }
 double my_fun (int n)
 {
 	if(n>1)
-		return (1.0/pow2(n))+my_fun(n-1);
+	{
+		printf("%d\n", prod(n));
+		return (1.0/prod(n))+my_fun(n-1);
+	}
 	else
 		return 0.5;
 }
@@ -19,8 +22,8 @@ double my_fun (int n)
 int main (void)
 {
 	int i;
-	for(i=3;i<=6;i++)
-		printf("my_fun(%d)=%f\n", i, my_fun(i));
+	for(i=5;i<=10;i++)
+		printf("my_fun(%d)=%10f\n", i, my_fun(i));
 		
 	system("pause");
 	return 0;
