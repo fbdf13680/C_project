@@ -21,8 +21,14 @@ double my_fun (int n)
 int main (void)
 {
 	int i;
-	for(i=5;i<=10;i++)
-		printf("my_fun(%d)=%10f\n", i, my_fun(i));
+	for(i=2;i<=10;i++)
+	{
+		if((my_fun(i)-my_fun(i-1))<0.0001)
+		{
+			printf("my_fun(%d)-my_fun(%d)=%10f\n", i, i-1, my_fun(i)-my_fun(i-1));
+			break;
+		}
+	}
 		
 	system("pause");
 	return 0;
