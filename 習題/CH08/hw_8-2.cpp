@@ -14,3 +14,11 @@ void kitty (int k)
 	for (i=1;i<=k;i++)
 		printf("Hello Kitty\n");
 }
+/*
+Hello Kitty
+Hello Kitty
+Hello Kitty
+Hello Kitty
+請按任意鍵繼續 . . .
+
+*/

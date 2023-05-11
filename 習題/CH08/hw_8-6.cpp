@@ -17,3 +17,8 @@ int power (int x, int n)
 		
 	return prod;
 }
+/*
+5^3 為 125
+請按任意鍵繼續 . . .
+
+*/

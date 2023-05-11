@@ -11,21 +11,28 @@ int main (void)
 }
 int find_prime (int x)
 {
-	int i, target, c1, c2=1, j;
-	for(i=2;i<=10000;i++)
+	int i, c=1, j;
+	for(i=2;i>0;i++)
 	{
-		c1=0;
-		for(j=2;j<=i;j++)
+		for(j=2;j<i;j++)
 		{
 			if(i%j==0)
-				c1+=1;
-		}
-		if(c1==1)
-		{
-			printf("第%d個質數為 %d\n", c2, i);
-			c2+=1;
-		}
-		else if (c2==x)
-			return i;
+			{
+				break;
+			}
+			
+			if(j == i - 1)
+			{
+                c += 1;
+            }
+        }
+        
+        if(c == x)
+            return i;
 	}
 }
+/*
+第100個質數為 541
+請按任意鍵繼續 . . .
+*/
+

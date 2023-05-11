@@ -12,3 +12,9 @@ void kitty (void)
 {
 	printf("Hello Kitty\n");
 }
+/*
+
+Hello Kitty
+請按任意鍵繼續 . . .
+
+*/

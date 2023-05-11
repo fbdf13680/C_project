@@ -13,3 +13,8 @@ double square (double k)
 {
 	return k*k;
 }
+/*
+4.00^2= 16.00
+請按任意鍵繼續 . . .
+
+*/

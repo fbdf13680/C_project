@@ -16,3 +16,9 @@ int cub (int x)
 		total*=x;
 	printf("%d^3= %d\n", x, total);
 }
+/*
+
+2^3= 8
+請按任意鍵繼續 . . .
+
+*/
